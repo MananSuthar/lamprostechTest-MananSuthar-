@@ -47,7 +47,7 @@ class SingleInteger
     
  
           // calling function
-          System.out.println ("Element occurring once is " + findSingle (ar, n));
+          System.out.println ("Element occurring once is " + integerr (ar, n));
 
 } 
 } 
