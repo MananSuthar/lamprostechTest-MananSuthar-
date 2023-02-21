@@ -1,0 +1,53 @@
+import java.io,*;
+
+class SingleInteger
+
+{
+    // Function to find single integer
+  static int integerr (int A[], int array) 
+  {
+    
+    // loop over every element
+      for (int i = 0; i < array; i++)
+      {
+ 
+          // count start from 0
+          int count = 0;
+	
+ 
+          for (int j = 0; j < array; j++)
+              {
+ 
+	                  // Count the frequency
+	                  // checking all of the element
+	                  if (A[i] == A[j])
+	                  {		
+                        count++;
+	                   }
+	  
+                }
+	
+ 
+	                // if the element is not repeat
+	                        if (count == 1)
+	                        {	    
+                           		 return A[i];
+	  
+                           }
+      
+            }   
+     } 
+ 
+    public static void main (String[]args)
+      {
+    
+          int ar[] = { 2, 2, 1};
+    
+          int n = ar.length;
+    
+ 
+          // calling function
+          System.out.println ("Element occurring once is " + findSingle (ar, n));
+
+} 
+} 
